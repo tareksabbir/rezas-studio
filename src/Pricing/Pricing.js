@@ -5,122 +5,195 @@ const Pricing = () => {
     return (
         <>
             <div className="bg-white py-6 sm:py-8 lg:py-12">
-                <div className="max-w-screen-lg px-4 md:px-8 mx-auto">
+                <div className="max-w-screen-xl px-4 md:px-8 mx-auto">
+                    <h2 className="text-gray-800 text-2xl lg:text-3xl font-bold text-center mb-4 md:mb-8 xl:mb-12">Our plans for you</h2>
 
-                    <div className="mb-10 md:mb-16">
-                        <h2 className="text-gray-800 text-2xl lg:text-3xl font-bold text-center mb-4 md:mb-6">Choose a Bundle</h2>
+                    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-6 md:mb-8">
 
-                        <p className="max-w-screen-md text-gray-500 md:text-lg text-center mx-auto">This is a section of some simple filler text, also known as placeholder text. It shares some characteristics of a real written text but is random or otherwise generated.</p>
-                    </div>
+                        <div className="flex flex-col border rounded-lg p-4 pt-6">
+                            <div className="mb-12">
+                                <div className="text-gray-800 text-2xl font-bold text-center mb-2">Free</div>
 
+                                <p className="text-gray-500 text-center mx-auto px-8 mb-8">For individuals and organizations who want to try our system</p>
 
-                    <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-0">
+                                <div className="space-y-2">
 
-                        <div className="w-full sm:w-1/2 lg:w-1/3 bg-gray-800 rounded-lg sm:rounded-r-none p-6 sm:p-8">
-                            <div className="mb-4">
-                                <h3 className="text-gray-100 text-2xl sm:text-3xl font-semibold">Basic Bundle</h3>
-                                <p className="text-gray-300">Ebook</p>
+                                    <div className="flex gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 shrink-0 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                        </svg>
+
+                                        <span className="text-gray-600">1.000 MB file storage</span>
+                                    </div>
+
+                                    <div className="flex gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 shrink-0 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                        </svg>
+
+                                        <span className="text-gray-600">2.000 MB bandwidth per month</span>
+                                    </div>
+
+                                    <div className="flex gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 shrink-0 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                        </svg>
+
+                                        <span className="text-gray-600">200 tasks per month</span>
+                                    </div>
+                                    <div className="flex gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 shrink-0 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                        </svg>
+
+                                        <span className="text-gray-600">Comunity support</span>
+                                    </div>
+
+                                </div>
                             </div>
 
-                            <div className="space-x-2 mb-4">
-                                <span className="text-gray-100 text-4xl font-bold">$29</span>
-                                <span className="text-gray-300 text-2xl line-through">$49</span>
-                            </div>
-
-                            <ul className="text-gray-300 space-y-2 mb-6">
-
-                                <li className="flex items-center gap-1.5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 shrink-0" viewBox="0 0 20 20" fill="currentColor">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                                    </svg>
-
-                                    <span>Ebook</span>
-                                </li>
-
-                                <li className="flex items-center gap-1.5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 shrink-0" viewBox="0 0 20 20" fill="currentColor">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                                    </svg>
-
-                                    <span>Multiple examples</span>
-                                </li>
-
-                                <li className="flex items-center gap-1.5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 shrink-0" viewBox="0 0 20 20" fill="currentColor">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                                    </svg>
-
-                                    <span>Basic support</span>
-                                </li>
-
-                            </ul>
-
-                            <Link to='/' className="block bg-gray-500 hover:bg-gray-600 focus-visible:ring ring-indigo-300 text-gray-100 active:text-gray-300 text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3">Get the Basic Bundle</Link>
-                        </div>
-
-                        <div className="w-full sm:w-1/2 bg-gradient-to-tr from-indigo-500 to-violet-400 rounded-lg shadow-xl p-6 sm:p-8">
-                            <div className="flex flex-col lg:flex-row justify-between items-start gap-4 mb-4">
-                                <div>
-                                    <h3 className="text-white text-2xl sm:text-3xl font-semibold">Pro Bundle</h3>
-                                    <p className="text-indigo-100">Ebook + Video course</p>
+                            <div className="flex flex-col gap-8 mt-auto">
+                                <div className="flex justify-center items-end gap-1">
+                                    <span className="self-start text-gray-600">$</span>
+                                    <span className="text-4xl text-gray-800 font-bold">0</span>
+                                    <span className="text-gray-500">per user/month</span>
                                 </div>
 
-                                <span className="inline-block order-first lg:order-none bg-indigo-200 bg-opacity-50 text-white text-xs font-semibold tracking-wider uppercase rounded-full px-3 py-1">Best value</span>
+                                <Link to='/' className="block bg-gray-200 hover:bg-gray-300 focus-visible:ring ring-indigo-300 text-gray-500 active:text-gray-700 text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3">Join for free</Link>
+                            </div>
+                        </div>
+
+                        <div className="flex flex-col border-2 border-indigo-500 rounded-lg relative p-4 pt-6">
+                            <div className="mb-12">
+                                <div className="flex justify-center absolute -top-3 inset-x-0">
+                                    <span className="h-6 flex justify-center items-center bg-indigo-500 text-white text-xs font-semibold tracking-widest uppercase rounded-full px-3 py-1">most popular</span>
+                                </div>
+
+                                <div className="text-gray-800 text-2xl font-bold text-center mb-2">Team</div>
+
+                                <p className="text-gray-500 text-center mx-auto px-8 mb-8">Avanced feaures for Individuals and organizations</p>
+
+                                <div className="space-y-2">
+
+                                    <div className="flex gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 shrink-0 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                        </svg>
+
+                                        <span className="text-gray-600">Unlimited file storage</span>
+                                    </div>
+
+                                    <div className="flex gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 shrink-0 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                        </svg>
+
+                                        <span className="text-gray-600">10 GB bandwidth per month</span>
+                                    </div>
+
+                                    <div className="flex gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 shrink-0 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                        </svg>
+
+                                        <span className="text-gray-600">10.000 tasks per month</span>
+                                    </div>
+
+                                    <div className="flex gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 shrink-0 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                        </svg>
+
+                                        <span className="text-gray-600">Email support</span>
+                                    </div>
+
+                                    <div className="flex gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 shrink-0 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                        </svg>
+
+                                        <span className="text-gray-600">100 Webhooks</span>
+                                    </div>
+
+                                </div>
                             </div>
 
-                            <div className="space-x-2 mb-4">
-                                <span className="text-white text-4xl font-bold">$49</span>
-                                <span className="text-indigo-100 text-2xl line-through">$89</span>
+                            <div className="flex flex-col gap-8 mt-auto">
+                                <div className="flex justify-center items-end gap-1">
+                                    <span className="self-start text-gray-600">$</span>
+                                    <span className="text-4xl text-gray-800 font-bold">19</span>
+                                    <span className="text-gray-500">per user/month</span>
+                                </div>
+
+                                <Link to='/' className="block bg-indigo-500 hover:bg-indigo-600 active:bg-indigo-700 focus-visible:ring ring-indigo-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3">Continue with Team</Link>
+                            </div>
+                        </div>
+
+                        <div className="flex flex-col border rounded-lg p-4 pt-6">
+                            <div className="mb-12">
+                                <div className="text-gray-800 text-2xl font-bold text-center mb-2">Enterprise</div>
+
+                                <p className="text-gray-500 text-center mx-auto px-8 mb-8">Maximum performace for organisations</p>
+
+                                <div className="space-y-2">
+
+                                    <div className="flex gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 shrink-0 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                        </svg>
+
+                                        <span className="text-gray-600">Unlimited file storage</span>
+                                    </div>
+
+                                    <div className="flex gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 shrink-0 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                        </svg>
+
+                                        <span className="text-gray-600">Unlimited bandwidth per month</span>
+                                    </div>
+
+                                    <div className="flex gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 shrink-0 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                        </svg>
+
+                                        <span className="text-gray-600">1.000.000 tasks per month</span>
+                                    </div>
+
+                                    <div className="flex gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 shrink-0 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                        </svg>
+
+                                        <span className="text-gray-600">Email and phone support</span>
+                                    </div>
+
+                                    <div className="flex gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 shrink-0 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                        </svg>
+
+                                        <span className="text-gray-600">Unlimited Webhooks</span>
+                                    </div>
+
+                                </div>
                             </div>
 
-                            <ul className="text-indigo-100 space-y-2 mb-6">
+                            <div className="flex flex-col gap-8 mt-auto">
+                                <div className="flex justify-center items-end gap-1">
+                                    <span className="self-start text-gray-600">$</span>
+                                    <span className="text-4xl text-gray-800 font-bold">49</span>
+                                    <span className="text-gray-500">per user/month</span>
+                                </div>
 
-                                <li className="flex items-center gap-1.5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 shrink-0" viewBox="0 0 20 20" fill="currentColor">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                                    </svg>
-
-                                    <span>Ebook</span>
-                                </li>
-
-                                <li className="flex items-center gap-1.5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 shrink-0" viewBox="0 0 20 20" fill="currentColor">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                                    </svg>
-
-                                    <span>Video course</span>
-                                </li>
-
-                                <li className="flex items-center gap-1.5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 shrink-0" viewBox="0 0 20 20" fill="currentColor">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                                    </svg>
-
-                                    <span>Multiple examples</span>
-                                </li>
-
-                                <li className="flex items-center gap-1.5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 shrink-0" viewBox="0 0 20 20" fill="currentColor">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                                    </svg>
-
-                                    <span>Work sheets</span>
-                                </li>
-
-                                <li className="flex items-center gap-1.5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 shrink-0" viewBox="0 0 20 20" fill="currentColor">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                                    </svg>
-
-                                    <span>Premium support</span>
-                                </li>
-
-                            </ul>
-
-                            <Link to='/' className="block bg-indigo-200 bg-opacity-50 hover:bg-indigo-300 active:bg-indigo-400 focus-visible:ring ring-indigo-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3">Get the Pro Bundle</Link>
+                                <Link to='/' className="block bg-gray-800 hover:bg-gray-700 active:bg-gray-600 focus-visible:ring ring-indigo-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3">Contact Sales</Link>
+                            </div>
                         </div>
 
                     </div>
+
+                    <div className="text-gray-500 text-sm sm:text-base text-center">Need help deciding?<Link to='/' className="text-gray-500 hover:text-indigo-500 active:text-indigo-600 underline transition duration-100">Get in touch</Link>.</div>
                 </div>
             </div>
         </>

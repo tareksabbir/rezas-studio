@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import images from '../../src/Assets/icons8-camera-66.png'
 
 
 const Footer = () => {
@@ -13,7 +14,7 @@ const Footer = () => {
 
                             <div className="lg:-mt-2 mb-4">
                                 <Link to='/' className="inline-flex items-center text-gray-100 text-xl md:text-2xl font-bold gap-2" aria-label="logo">
-
+                                    <img src={images} alt="" height={40} width={40} />
                                     Rezas Studio
                                 </Link>
                             </div>

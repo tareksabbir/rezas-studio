@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Starts from '../Components/Navbar/Starts/Starts';
 import Pricing from '../Pricing/Pricing';
 
 const Header = () => {
@@ -7,7 +8,7 @@ const Header = () => {
         <>
             <div className="bg-white pb-6 sm:pb-8 lg:pb-12">
                 <div className="max-w-screen-2xl px-6 md:px-12 mx-auto">
-                    <section class="min-h-96 flex justify-center items-center flex-1 shrink-0 bg-gray-100 overflow-hidden shadow-lg rounded-lg relative py-16 md:py-20 xl:py-36">
+                    <section class="min-h-96 flex justify-center items-center flex-1 shrink-0  overflow-hidden shadow-lg rounded-lg relative py-16 md:py-20 xl:py-36">
 
                         <img src="https://images.unsplash.com/photo-1506072328856-cd6629b00b62?auto=format&q=75&fit=crop&w=1500" loading="lazy" alt="" class="w-full h-full object-cover object-center absolute inset-0" />
 
@@ -62,6 +63,7 @@ const Header = () => {
 
                 </div>
             </div>
+            <Starts></Starts>
             <Pricing></Pricing>
         </>
 
