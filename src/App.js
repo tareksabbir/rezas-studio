@@ -7,7 +7,10 @@ import Footer from './Components/Footer/Footer'
 import Error from './Components/Error/Error';
 import Blog from './Components/Blog/Blog';
 import BigGallery from './Components/Gallery/BigGallery';
-import Login from './Login/Login';
+
+import About from './Components/About/About'
+import Login from './Components/Login/Login';
+
 
 
 function App() {
@@ -19,7 +22,9 @@ function App() {
         <Route path='/bigallery' element={<BigGallery></BigGallery>}></Route>
         <Route path='/pricing' element={<Pricing></Pricing>}></Route>
         <Route path='/blog' element={<Blog></Blog>}></Route>
+        <Route path='/about' element={<About></About>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
+
 
 
         <Route path='*' element={<Error></Error>}></Route>
