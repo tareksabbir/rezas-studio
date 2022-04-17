@@ -27,9 +27,9 @@ const Services = () => {
                             <img src={img1} alt="" />
                         </div>
 
-                        <h3 class="text-lg md:text-xl font-semibold text-center mb-2">Commercial</h3>
+                        <h3 class="text-lg md:text-xl font-semibold text-center mb-2">Commercial Shoots</h3>
                         <p class="text-gray-500 text-center mb-2">Whatever size your company, I can help improve its image, promote its values and increase customer engagement.</p>
-                        <Link to='/' class="text-indigo-500 hover:text-indigo-600 active:text-indigo-700 font-bold transition duration-100">More</Link>
+                        <Link to='/pricing' class="text-indigo-500 hover:text-indigo-600 active:text-indigo-700 font-bold transition duration-100">Hire Now</Link>
                     </div>
 
                     <div class="flex flex-col items-center">
@@ -37,9 +37,9 @@ const Services = () => {
                             <img src={img2} alt="" />
                         </div>
 
-                        <h3 class="text-lg md:text-xl font-semibold text-center mb-2">Portrait</h3>
+                        <h3 class="text-lg md:text-xl font-semibold text-center mb-2">Portrait Shoots</h3>
                         <p class="text-gray-500 text-center mb-2">Portrait sessions are an expression of who you are. The images we create together should reflect what makes you, you.</p>
-                        <Link to='/' class="text-indigo-500 hover:text-indigo-600 active:text-indigo-700 font-bold transition duration-100">More</Link>
+                        <Link to='/pricing' class="text-indigo-500 hover:text-indigo-600 active:text-indigo-700 font-bold transition duration-100">Hire Now</Link>
                     </div>
 
                     <div class="flex flex-col items-center">
@@ -47,9 +47,9 @@ const Services = () => {
                             <img src={img3} alt="" />
                         </div>
 
-                        <h3 class="text-lg md:text-xl font-semibold text-center mb-2">New Born</h3>
+                        <h3 class="text-lg md:text-xl font-semibold text-center mb-2">New Born Shoots</h3>
                         <p class="text-gray-500 text-center mb-2">Newborn sessions capture those precious first moments of your baby.</p>
-                        <Link to='/' class="text-indigo-500 hover:text-indigo-600 active:text-indigo-700 font-bold transition duration-100">More</Link>
+                        <Link to='/pricing' class="text-indigo-500 hover:text-indigo-600 active:text-indigo-700 font-bold transition duration-100">Hire Now</Link>
                     </div>
 
                     <div class="flex flex-col items-center">
@@ -57,9 +57,9 @@ const Services = () => {
                             <img src={img4} alt="" />
                         </div>
 
-                        <h3 class="text-lg md:text-xl font-semibold text-center mb-2">Family</h3>
+                        <h3 class="text-lg md:text-xl font-semibold text-center mb-2">Family Shoots</h3>
                         <p class="text-gray-500 text-center mb-2">Family sessions honour your love and connection to one another.</p>
-                        <Link to='/' class="text-indigo-500 hover:text-indigo-600 active:text-indigo-700 font-bold transition duration-100">More</Link>
+                        <Link to='/pricing' class="text-indigo-500 hover:text-indigo-600 active:text-indigo-700 font-bold transition duration-100">Hire Now</Link>
                     </div>
 
                     <div class="flex flex-col items-center">
@@ -67,9 +67,9 @@ const Services = () => {
                             <img src={img5} alt="" />
                         </div>
 
-                        <h3 class="text-lg md:text-xl font-semibold text-center mb-2">Fashion</h3>
+                        <h3 class="text-lg md:text-xl font-semibold text-center mb-2">Fashion Shoots</h3>
                         <p class="text-gray-500 text-center mb-2">From image making to stylists. I will always source the right talent for the shoot.</p>
-                        <Link to='/' class="text-indigo-500 hover:text-indigo-600 active:text-indigo-700 font-bold transition duration-100">More</Link>
+                        <Link to='/pricing' class="text-indigo-500 hover:text-indigo-600 active:text-indigo-700 font-bold transition duration-100">Hire Now</Link>
                     </div>
 
                     <div class="flex flex-col items-center">
@@ -77,9 +77,9 @@ const Services = () => {
                             <img src={img6} alt="" />
                         </div>
 
-                        <h3 class="text-lg md:text-xl font-semibold text-center mb-2">Weeding</h3>
+                        <h3 class="text-lg md:text-xl font-semibold text-center mb-2">Weeding Shoots</h3>
                         <p class="text-gray-500 text-center mb-2">From the getting ready shots,little and all the in-between moments. I promise I will be there</p>
-                        <Link to='/' class="text-indigo-500 hover:text-indigo-600 active:text-indigo-700 font-bold transition duration-100">More</Link>
+                        <Link to='/pricing' class="text-indigo-500 hover:text-indigo-600 active:text-indigo-700 font-bold transition duration-100">Hire Now</Link>
                     </div>
 
                 </div>
