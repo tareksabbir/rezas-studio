@@ -1,10 +1,12 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Header from './Components/Header/Header';
 import Navbar from './Components/Navbar/Navbar';
-import Newsletter from './Components/Navbar/Newsletter/Newsletter';
-import Footer from './Footer/Footer';
-import Header from './Header/Header';
-import Pricing from './Pricing/Pricing';
+import Pricing from './Components/Pricing/Pricing';
+import Newsletter from './Components/Newsletter/Newsletter'
+import Footer from './Components/Footer/Footer'
+
+
 
 function App() {
   return (
@@ -16,6 +18,12 @@ function App() {
       </Routes>
       <Newsletter></Newsletter>
       <Footer></Footer>
+
+
+
+
+
+
     </>
   );
 }

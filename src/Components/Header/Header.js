@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Starts from '../Components/Navbar/Starts/Starts';
+import Starts from '../Starts/Starts'
 import Pricing from '../Pricing/Pricing';
+
 
 const Header = () => {
     return (
@@ -65,6 +66,7 @@ const Header = () => {
             </div>
             <Starts></Starts>
             <Pricing></Pricing>
+
         </>
 
     );
