@@ -14,9 +14,9 @@ const Services = () => {
             <div class="max-w-screen-2xl px-6 md:px-16 mx-auto">
 
                 <div class="mb-10 md:mb-16">
-                    <h2 class="text-gray-800 text-2xl lg:text-3xl font-bold text-center mb-4 md:mb-6">Our competitive advantage</h2>
+                    <h2 class="text-gray-800 text-2xl lg:text-3xl font-bold text-center mb-4 md:mb-6">My Services</h2>
 
-                    <p class="max-w-screen-md text-gray-500 md:text-lg text-center mx-auto">This is a section of some simple filler text, also known as placeholder text. It shares some characteristics of a real written text but is random or otherwise generated.</p>
+                    <p class="max-w-screen-md text-gray-500 md:text-lg text-center mx-auto">I love to shoot happiness. Photography is my passion. Im so lucky that its my profession as well. I love to meet people & shoot. If you are still looking for your best of you version yet, I may help you lets create great things together.</p>
                 </div>
 
 
