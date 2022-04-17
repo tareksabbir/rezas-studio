@@ -15,7 +15,7 @@ const Navbar = () => {
 
             <nav className="hidden lg:flex gap-12">
                 <Link to='/' className="text-indigo-500 text-lg font-semibold">Home</Link>
-                <Link to='/' className="text-gray-600 hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100">Blogs</Link>
+                <Link to='/blog' className="text-gray-600 hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100">Blogs</Link>
                 <Link to='/pricing' className="text-gray-600 hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100">Pricing</Link>
                 <Link to='/' className="text-gray-600 hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100">About</Link>
                 <Link to='/' className="text-gray-600 hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100">Login</Link>
