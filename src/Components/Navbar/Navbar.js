@@ -7,7 +7,7 @@ const Navbar = () => {
     return (
         <header className="flex justify-between items-center py-8 md:py-8  max-w-screen-2xl px-4 md:px-10 mx-auto">
 
-            <Link to='/' className="text-gray-700 inline-flex items-center text-black-800 text-2xl md:text-3xl font-bold gap-2.5" aria-label="logo">
+            <Link to='/' className="text-gray-600 inline-flex items-center text-black-800 text-2xl md:text-3xl font-bold gap-2.5" aria-label="logo">
                 <img src={logo} alt="" height={40} width={40} />
 
                 Rezas Studio
@@ -15,10 +15,12 @@ const Navbar = () => {
 
             <nav className="hidden lg:flex gap-12">
                 <Link to='/' className="text-indigo-500 text-lg font-semibold">Home</Link>
-                <Link to='/blog' className="text-gray-600 hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100">Blogs</Link>
+                <Link to='/bigallery' className="text-gray-600 hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100">Gallery</Link>
+
                 <Link to='/pricing' className="text-gray-600 hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100">Pricing</Link>
+                <Link to='/blog' className="text-gray-600 hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100">Blogs</Link>
                 <Link to='/' className="text-gray-600 hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100">About</Link>
-                <Link to='/' className="text-gray-600 hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100">Login</Link>
+                <Link to='/login' className="text-gray-600 hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100">Login</Link>
             </nav>
 
             <Link to='/' className="hidden lg:inline-block bg-gray-200 hover:bg-gray-300 focus-visible:ring ring-indigo-300 text-gray-500 active:text-gray-700 text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3">Book Now</Link>

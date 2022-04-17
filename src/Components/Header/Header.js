@@ -1,7 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Starts from '../Starts/Starts'
-import Pricing from '../Pricing/Pricing';
+import Services from '../Services/Services';
+import Gallery from '../Gallery/Gallery';
+import Newsletter from '../Newsletter/Newsletter';
+import Testimonials from '../Testimonials/Testimonials';
 
 
 const Header = () => {
@@ -11,7 +14,7 @@ const Header = () => {
                 <div className="max-w-screen-2xl px-6 md:px-12 mx-auto">
                     <section class="min-h-96 flex justify-center items-center flex-1 shrink-0  overflow-hidden shadow-lg rounded-lg relative py-16 md:py-20 xl:py-36">
 
-                        <img src="https://images.unsplash.com/photo-1506072328856-cd6629b00b62?auto=format&q=75&fit=crop&w=1500" loading="lazy" alt="" class="w-full h-full object-cover object-center absolute inset-0" />
+                        <img src="https://images.unsplash.com/photo-1615212049275-95561aebe1b4?auto=format&q=75&fit=crop&w=1500" loading="lazy" alt="" class="w-full h-full object-cover object-center absolute inset-0" />
 
                         <div class=" bg-slate-400 mix-blend-multiply absolute inset-0"></div>
 
@@ -64,8 +67,17 @@ const Header = () => {
 
                 </div>
             </div>
+            <br className='mt-5' />
             <Starts></Starts>
-            <Pricing></Pricing>
+            <br className='mt-10' />
+            <Services></Services>
+            <br className='mt-10' />
+            <Gallery></Gallery>
+            <br className='mt-10' />
+            <Testimonials></Testimonials>
+            <br className='mt-10' />
+            <Newsletter></Newsletter>
+
 
         </>
 
