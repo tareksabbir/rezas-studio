@@ -7,6 +7,7 @@ import { useSendPasswordResetEmail } from 'react-firebase-hooks/auth';
 import { ToastContainer, toast } from 'react-toastify';
 
 import 'react-toastify/dist/ReactToastify.css';
+import Loading from '../Loading/Loading';
 
 
 const Login = () => {
@@ -16,8 +17,10 @@ const Login = () => {
     const [
         signInWithEmailAndPassword,
         user,
-        error,
+        error
+
     ] = useSignInWithEmailAndPassword(auth);
+
 
     const [signInWithGoogle, googleUser] = useSignInWithGoogle(auth);
     const [sendPasswordResetEmail] = useSendPasswordResetEmail(auth);
@@ -76,10 +79,11 @@ const Login = () => {
                         <div>
                             <label for="password" className="inline-block text-gray-800 text-sm sm:text-base mb-2">Password</label>
                             <input onBlur={handlePasswordBlur} name="password" className="w-full bg-gray-50 text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2" required type="password" />
+                            <p>{error.message}</p>
                         </div>
-                        <p>{error?.message}</p>
 
                         <button className="block bg-gray-800 hover:bg-gray-700 active:bg-gray-600 focus-visible:ring ring-gray-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3">Log in</button>
+
 
                         <div className="flex justify-center items-center relative">
                             <span className="h-px bg-gray-300 absolute inset-x-0"></span>
