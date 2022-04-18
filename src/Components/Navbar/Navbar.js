@@ -29,7 +29,7 @@ const Navbar = () => {
                 <Link to='/pricing' className="text-gray-600 hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100">Pricing</Link>
                 <Link to='/blog' className="text-gray-600 hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100">Blogs</Link>
                 <Link to='/about' className="text-gray-600 hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100">About</Link>
-                <Link to='/checkout' className="text-gray-600 hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100">Checkout</Link>
+
                 {
                     user ?
                         <Link onClick={handleLogout} to='/login' className="text-gray-600 hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100">Logout</Link>
