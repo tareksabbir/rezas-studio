@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
+import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import { useSendPasswordResetEmail } from 'react-firebase-hooks/auth';
+
 
 const Login = () => {
 
@@ -12,7 +15,17 @@ const Login = () => {
         user,
         error,
     ] = useSignInWithEmailAndPassword(auth);
+
+    const [signInWithGoogle] = useSignInWithGoogle(auth);
+    const [sendPasswordResetEmail] = useSendPasswordResetEmail(auth);
+
+
     const navigate = useNavigate()
+    const location = useLocation();
+    const from = location.state?.from?.pathname || '/ '
+
+
+
 
     const handleEmailBlur = event => {
         setEmail(event.target.value);
@@ -26,11 +39,17 @@ const Login = () => {
         signInWithEmailAndPassword(email, password);
     }
 
+
+
     if (user) {
-        navigate('/')
+        navigate(from, { replace: true });
     }
 
+    const handleForgotPassword = async () => {
+        await sendPasswordResetEmail(email);
+        alert('Sent email');
 
+    }
 
 
     return (
@@ -66,7 +85,7 @@ const Login = () => {
                             Continue with Facebook
                         </button>
 
-                        <button className="flex justify-center items-center bg-white hover:bg-gray-100 active:bg-gray-200 border border-gray-300 focus-visible:ring ring-gray-300 text-gray-800 text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 gap-2 px-8 py-3">
+                        <button onClick={() => signInWithGoogle()} className="flex justify-center items-center bg-white hover:bg-gray-100 active:bg-gray-200 border border-gray-300 focus-visible:ring ring-gray-300 text-gray-800 text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 gap-2 px-8 py-3">
                             <svg className="w-5 h-5 shrink-0" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M23.7449 12.27C23.7449 11.48 23.6749 10.73 23.5549 10H12.2549V14.51H18.7249C18.4349 15.99 17.5849 17.24 16.3249 18.09V21.09H20.1849C22.4449 19 23.7449 15.92 23.7449 12.27Z" fill="#4285F4" />
                                 <path d="M12.2549 24C15.4949 24 18.2049 22.92 20.1849 21.09L16.3249 18.09C15.2449 18.81 13.8749 19.25 12.2549 19.25C9.12492 19.25 6.47492 17.14 5.52492 14.29H1.54492V17.38C3.51492 21.3 7.56492 24 12.2549 24Z" fill="#34A853" />
@@ -76,6 +95,10 @@ const Login = () => {
 
                             Continue with Google
                         </button>
+                    </div>
+                    <div className='bg-gray-100 items-center'>
+
+                        <p onClick={handleForgotPassword} className="pt-3 text-sm text-center text-indigo-500 hover:text-indigo-600 active:text-indigo-700 transition duration-100"><Link to="/login">Reset Password</Link></p>
                     </div>
 
                     <div className="flex justify-center items-center bg-gray-100 p-4">

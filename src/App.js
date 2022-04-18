@@ -11,6 +11,8 @@ import BigGallery from './Components/Gallery/BigGallery';
 import About from './Components/About/About'
 import Login from './Components/Login/Login';
 import Register from './Components/Register/Register';
+import RequireAuth from './Components/RequireAuth/RequireAuth';
+import CheckOut from './Components/CheckOut/CheckOut';
 
 
 
@@ -26,6 +28,12 @@ function App() {
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
+        <Route path='/checkout' element={
+          <RequireAuth>
+            <CheckOut></CheckOut>
+          </RequireAuth>
+        }></Route>
+
         <Route path='*' element={<Error></Error>}></Route>
       </Routes>
       <Footer></Footer>

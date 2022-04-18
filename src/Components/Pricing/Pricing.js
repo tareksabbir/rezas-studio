@@ -59,7 +59,7 @@ const Pricing = () => {
                                     <span className="text-gray-500">per user/month</span>
                                 </div>
 
-                                <Link to='/' className="block bg-gray-200 hover:bg-gray-300 focus-visible:ring ring-indigo-300 text-gray-500 active:text-gray-700 text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3">Join for free</Link>
+                                <Link to='/checkout' className="block bg-gray-200 hover:bg-gray-300 focus-visible:ring ring-indigo-300 text-gray-500 active:text-gray-700 text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3">Join for free</Link>
                             </div>
                         </div>
 
@@ -125,7 +125,7 @@ const Pricing = () => {
                                     <span className="text-gray-500">per user/month</span>
                                 </div>
 
-                                <Link to='/' className="block bg-indigo-500 hover:bg-indigo-600 active:bg-indigo-700 focus-visible:ring ring-indigo-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3">Continue with Team</Link>
+                                <Link to='/checkout' className="block bg-indigo-500 hover:bg-indigo-600 active:bg-indigo-700 focus-visible:ring ring-indigo-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3">Continue with Team</Link>
                             </div>
                         </div>
 
@@ -187,7 +187,7 @@ const Pricing = () => {
                                     <span className="text-gray-500">per user/month</span>
                                 </div>
 
-                                <Link to='/' className="block bg-gray-800 hover:bg-gray-700 active:bg-gray-600 focus-visible:ring ring-indigo-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3">Contact Sales</Link>
+                                <Link to='/checkout' className="block bg-gray-800 hover:bg-gray-700 active:bg-gray-600 focus-visible:ring ring-indigo-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3">Contact Sales</Link>
                             </div>
                         </div>
 
