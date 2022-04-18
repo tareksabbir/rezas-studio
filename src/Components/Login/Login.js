@@ -4,6 +4,9 @@ import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { useSendPasswordResetEmail } from 'react-firebase-hooks/auth';
+import { ToastContainer, toast } from 'react-toastify';
+
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const Login = () => {
@@ -46,9 +49,12 @@ const Login = () => {
     }
 
     const handleForgotPassword = async () => {
-        await sendPasswordResetEmail(email);
-        alert('Sent email');
-
+        if (email) {
+            await sendPasswordResetEmail(email);
+            toast('Sent email');
+        } else {
+            toast('Enter your email address!!')
+        }
     }
 
 
@@ -96,9 +102,9 @@ const Login = () => {
                             Continue with Google
                         </button>
                     </div>
-                    <div className='bg-gray-100 items-center'>
-
-                        <p onClick={handleForgotPassword} className="pt-3 text-sm text-center text-indigo-500 hover:text-indigo-600 active:text-indigo-700 transition duration-100"><Link to="/login">Reset Password</Link></p>
+                    <ToastContainer />
+                    <div className='bg-gray-100 flex justify-center items-center'>
+                        <button onClick={handleForgotPassword} className="mx-auto pt-3 text-sm  text-indigo-500 hover:text-indigo-600 active:text-indigo-700 transition duration-100">Reset Password</button>
                     </div>
 
                     <div className="flex justify-center items-center bg-gray-100 p-4">
