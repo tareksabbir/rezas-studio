@@ -10,6 +10,7 @@ import BigGallery from './Components/Gallery/BigGallery';
 
 import About from './Components/About/About'
 import Login from './Components/Login/Login';
+import Register from './Components/Register/Register';
 
 
 
@@ -24,9 +25,7 @@ function App() {
         <Route path='/blog' element={<Blog></Blog>}></Route>
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
-
-
-
+        <Route path='/register' element={<Register></Register>}></Route>
         <Route path='*' element={<Error></Error>}></Route>
       </Routes>
       <Footer></Footer>
