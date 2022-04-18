@@ -23,7 +23,7 @@ const Header = () => {
                             <h1 class="text-white text-4xl sm:text-5xl md:text-6xl font-bold text-center mb-8 md:mb-12">Your Story Is Waiting To Be Told</h1>
 
                             <div class="w-full flex flex-col sm:flex-row sm:justify-center gap-2.5">
-                                <Link to='/pricing' class="inline-block bg-indigo-500 hover:bg-indigo-600 active:bg-indigo-700 focus-visible:ring ring-indigo-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3">Book Now</Link>
+                                <Link to='/pricing' class="inline-block bg-indigo-500 hover:bg-indigo-600 active:bg-indigo-700 focus-visible:ring ring-indigo-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3">Hire Now</Link>
 
                                 <Link to='/bigallery' class="inline-block bg-gray-200 hover:bg-gray-300 focus-visible:ring ring-indigo-300 text-gray-500 active:text-gray-700 text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3">Take tour</Link>
                             </div>

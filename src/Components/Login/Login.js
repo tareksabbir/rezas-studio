@@ -19,7 +19,7 @@ const Login = () => {
         error,
     ] = useSignInWithEmailAndPassword(auth);
 
-    const [signInWithGoogle] = useSignInWithGoogle(auth);
+    const [signInWithGoogle, googleUser] = useSignInWithGoogle(auth);
     const [sendPasswordResetEmail] = useSendPasswordResetEmail(auth);
 
 
@@ -45,6 +45,9 @@ const Login = () => {
 
 
     if (user) {
+        navigate(from, { replace: true });
+    }
+    if (googleUser) {
         navigate(from, { replace: true });
     }
 
