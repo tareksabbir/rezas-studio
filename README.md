@@ -1,6 +1,6 @@
 # Project namae Rezas Studio 
 
-live link is here  [Click here](https://github.com/facebook/create-react-app).
+live link is here  [Click here](https://rezas-studio.netlify.app).
 
 ## About This project 
 
